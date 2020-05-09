@@ -35,7 +35,9 @@
 - (UIView *)broadcastButton{
     if (!_broadcastButton) {
         RPSystemBroadcastPickerView *picker = [[RPSystemBroadcastPickerView alloc] initWithFrame:CGRectMake(100, 160, 60, 60)];
+        picker.preferredExtension = @"com.flaginfo.umsapp.iphone.appid98.TestSampleBufferBoardCast";
         _broadcastButton = picker;
+        
 
 
     }
