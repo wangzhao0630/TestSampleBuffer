@@ -221,7 +221,9 @@
         if (self.testBlock) {
             self.testBlock(testText, sampleBuffer);
         }
-    
+        if (sampleBuffer == NULL) {//防止内存泄漏
+            return;
+        }
         CFRelease(sampleBuffer);
     });
     
